@@ -1,0 +1,741 @@
+
+[ 
+    {
+
+        "matiere": "Sciences de la Vie et de la Terre",
+        "pays": "Union des Comores",
+        "source": "Programmes et Instructions Officielles – Collège-Lycée – Sciences de la Vie et de la Terre",
+        "annee": 2008,
+
+
+             "college": {
+            "6e": {
+
+                "objectifs": [
+                       "Découvrir l'organisation fonctionnelle des êtres vivants.",
+                       "Étudier l'organisation des vertébrés et des plantes à fleurs.",
+                       "Comprendre les relations d'interdépendance entre les êtres vivants.",
+                "Découvrir la place de l'être humain dans le monde vivant.",
+                "Introduire l'étude de la Terre et de sa structure."
+            ],
+
+            "chapitres": {
+
+                "Les vertébrés": [
+                    "Organisation générale des vertébrés",
+                    "Nutrition",
+                    "Respiration",
+                    "Mouvement et déplacement",
+                    "Reproduction",
+                    "Reproduction vivipare et ovipare"
+                ],
+
+                "Le corps humain et l'hygiène": [
+                    "Organisation du corps humain",
+                    "Caractéristiques sexuelles",
+                    "Hygiène du corps",
+                    "Prévention et maintien de la santé"
+                ],
+
+                "Les plantes à fleurs": [
+                    "Organisation d'une plante à fleurs",
+                    "Nutrition des plantes",
+                    "Reproduction sexuée",
+                    "Reproduction végétative"
+                ],
+
+                "Interdépendance des êtres vivants": [
+                    "Place de l'être humain dans le monde vivant",
+                    "Relations entre les êtres vivants",
+                    "Chaînes alimentaires",
+                    "Relations alimentaires"
+                ],
+
+                "Introduction à la géologie": [
+                    "Structure générale du globe terrestre",
+                    "Les grandes parties de la Terre",
+                    "Histoire de la Terre",
+                    "Évolution de la vie au cours des temps géologiques"
+                ]
+            },
+
+            "activites": [
+                "Observations du milieu local",
+                "Observations d'animaux et de végétaux",
+                "Travaux pratiques",
+                "Sorties pédagogiques sur le terrain"
+            ]
+        },
+
+       
+
+        "5e": {
+
+            "objectifs": [
+                "Étudier les principaux groupes d'invertébrés.",
+                "Découvrir les plantes sans fleurs.",
+                "Découvrir le monde microbien.",
+                "Sensibiliser aux infections sexuellement transmissibles.",
+                "Sensibiliser au VIH/SIDA.",
+                "Prévenir les grossesses non désirées.",
+                "Comprendre certains phénomènes géologiques."
+            ],
+
+            "chapitres": {
+
+                "Les invertébrés": [
+                    "Organisation des invertébrés",
+                    "Mouvement",
+                    "Nutrition",
+                    "Respiration",
+                    "Reproduction"
+                ],
+
+                "Les plantes sans fleurs": [
+                    "Organisation",
+                    "Nutrition",
+                    "Reproduction"
+                ],
+
+                "Les microorganismes": [
+                    "Découverte du monde microbien",
+                    "Rôle des microorganismes",
+                    "Relations entre microorganismes et êtres vivants"
+                ],
+
+                "Interdépendance et équilibre biologique": [
+                    "Place de l'être humain dans le milieu",
+                    "Vie sociale des invertébrés",
+                    "Commensalisme",
+                    "Parasitisme",
+                    "Symbiose",
+                    "Équilibre biologique"
+                ],
+
+                "Santé et reproduction": [
+                    "Infections sexuellement transmissibles",
+                    "VIH/SIDA",
+                    "Prévention du VIH/SIDA",
+                    "Grossesses non désirées",
+                    "Prévention et sensibilisation"
+                ],
+
+                "Phénomènes géologiques": [
+                    "Les séismes",
+                    "Le volcanisme",
+                    "Le volcan Karthala"
+                ]
+            },
+
+            "activites": [
+                "Observations du milieu local",
+                "Travaux pratiques",
+                "Sorties pédagogiques",
+                "Activités de sensibilisation sur les IST et le VIH/SIDA"
+            ]
+        },
+
+        "4e": {
+
+            "objectifs": [
+                "Comprendre les relations entre les différentes fonctions de l'organisme humain.",
+                "Étudier les matériaux et les ressources de la Terre.",
+                "Comprendre certains problèmes liés à l'environnement.",
+                "Sensibiliser aux conséquences des comportements sur la santé."
+            ],
+
+            "chapitres": {
+
+                "Les organes des sens": [
+                    "Les organes sensoriels",
+                    "Perception des informations de l'environnement"
+                ],
+
+                "Le mouvement": [
+                    "Les os",
+                    "Les muscles",
+                    "Les articulations",
+                    "Fonctionnement de l'appareil locomoteur"
+                ],
+
+                "Le système nerveux": [
+                    "Organisation du système nerveux",
+                    "Le cerveau",
+                    "Les nerfs",
+                    "Les réflexes"
+                ],
+
+                "Le volcanisme et les roches volcaniques": [
+                    "Volcanisme",
+                    "Roches volcaniques",
+                    "Formation des roches volcaniques"
+                ],
+
+                "Les roches sédimentaires": [
+                    "Formation des roches sédimentaires",
+                    "Principales caractéristiques des roches sédimentaires"
+                ],
+
+                "Le cycle des roches": [
+                    "Transformation des roches",
+                    "Cycle des roches"
+                ],
+
+                "L'eau et les ressources naturelles": [
+                    "Ressources en eau",
+                    "Importance de l'eau",
+                    "Problèmes liés à l'eau aux Comores",
+                    "Protection des ressources en eau"
+                ],
+
+                "Environnement et pollution": [
+                    "Déchets",
+                    "Pollution",
+                    "Conséquences de la pollution",
+                    "Protection de l'environnement"
+                ],
+
+                "Santé et comportements": [
+                    "Toxicomanie",
+                    "Tabagisme",
+                    "Alcoolisme",
+                    "Conséquences sur la santé"
+                ]
+            },
+
+            "activites": [
+                "Travaux pratiques",
+                "Observations de roches",
+                "Sorties géologiques",
+                "Étude de l'environnement local"
+            ]
+        },
+
+    
+
+        "3e": {
+
+            "objectifs": [
+                "Comprendre les grandes fonctions de nutrition.",
+                "Comprendre la reproduction humaine.",
+                "Comprendre les mécanismes de défense de l'organisme.",
+                "Connaître les principales maladies microbiennes.",
+                "Comprendre les moyens de prévention et de lutte contre les maladies."
+            ],
+
+            "chapitres": {
+
+                "Les aliments et leurs constituants": [
+                    "Les différents aliments",
+                    "Constituants des aliments",
+                    "Rôle des aliments dans l'organisme"
+                ],
+
+                "La digestion": [
+                    "Appareil digestif",
+                    "Transformation des aliments",
+                    "Absorption intestinale",
+                    "Besoins alimentaires"
+                ],
+
+                "La respiration": [
+                    "Appareil respiratoire",
+                    "Échanges respiratoires",
+                    "Utilisation du dioxygène"
+                ],
+
+                "La circulation sanguine": [
+                    "Le sang",
+                    "Cœur",
+                    "Vaisseaux sanguins",
+                    "Circulation du sang",
+                    "Transport des substances"
+                ],
+
+                "L'excrétion": [
+                    "Élimination des déchets",
+                    "Fonction des reins",
+                    "Urine"
+                ],
+
+                "La reproduction humaine": [
+                    "Appareils reproducteurs",
+                    "Puberté",
+                    "Fonctionnement des appareils reproducteurs",
+                    "Fécondation",
+                    "Développement embryonnaire",
+                    "Contraception",
+                    "Naissance",
+                    "Croissance et développement jusqu'à l'âge adulte"
+                ],
+
+                "Les microorganismes et les maladies": [
+                    "Microorganismes pathogènes",
+                    "Maladies microbiennes",
+                    "Maladies infantiles",
+                    "Maladies transmises par les vecteurs",
+                    "Maladies liées au péril fécal",
+                    "Infections sexuellement transmissibles"
+                ],
+
+                "Les défenses de l'organisme": [
+                    "Barrières naturelles",
+                    "La peau",
+                    "Le soi et le non-soi",
+                    "Réponse immunitaire",
+                    "Défenses de l'organisme"
+                ],
+
+                "Prévention et lutte contre les maladies": [
+                    "Antisepsie",
+                    "Vaccination",
+                    "Sérums",
+                    "Antibiotiques",
+                    "Prévention des maladies",
+                    "Hygiène et santé"
+                ]
+            },
+
+            "activites": [
+                "Travaux pratiques",
+                "Études de documents",
+                "Conférences",
+                "Débats sur les IST et le VIH/SIDA",
+                "Activités de prévention",
+                "Sorties pédagogiques"
+            ]
+        }
+    },
+
+    "lycee": {
+
+
+        "Seconde": {
+
+            "series": ["A", "C"],
+
+            "objectifs": [
+                "Étudier la diversité du monde vivant.",
+                "Comprendre les relations entre les êtres vivants et leur environnement.",
+                "Découvrir les bases de l'écologie.",
+                "Comprendre la production de biomasse.",
+                "Sensibiliser à la protection de l'environnement et des ressources naturelles."
+            ],
+
+            "chapitres": {
+
+                "Diversité du monde vivant": [
+                    "Diversité du monde animal",
+                    "Diversité du monde végétal",
+                    "Classification des êtres vivants"
+                ],
+
+                "Introduction à l'écologie": [
+                    "Biotope",
+                    "Biocénose",
+                    "Écosystème",
+                    "Facteurs écologiques",
+                    "Étude des milieux locaux"
+                ],
+
+                "Production et utilisation des ressources biologiques": [
+                    "Biomasse",
+                    "Réseaux trophiques",
+                    "Sol",
+                    "Cycle du carbone",
+                    "Cycle de l'azote",
+                    "Amélioration des ressources biologiques",
+                    "Protection des ressources",
+                    "Impact des activités humaines",
+                    "Déforestation",
+                    "Protection du milieu marin",
+                    "Parc marin de Mohéli"
+                ],
+
+                "Relations entre les êtres vivants": [
+                    "Communication animale",
+                    "Relations entre individus",
+                    "Relations entre espèces",
+                    "Préservation des individus",
+                    "Préservation des espèces"
+                ],
+
+                "Fossilisation et énergie solaire": [
+                    "Fossilisation",
+                    "Origine du charbon",
+                    "Origine du pétrole",
+                    "Énergie solaire",
+                    "Conséquences de l'utilisation des combustibles fossiles"
+                ]
+            },
+
+            "activites": [
+                "Études des écosystèmes locaux",
+                "Observations sur le terrain",
+                "Travaux pratiques",
+                "Excursions pédagogiques",
+                "Étude du milieu marin de Mohéli",
+                "Projets de protection de l'environnement"
+            ]
+        },
+
+        "Première A": {
+
+            "objectifs": [
+                "Comprendre l'organisation générale de la cellule.",
+                "Comprendre les relations entre alimentation et santé.",
+                "Étudier certaines agressions de l'environnement sur l'organisme.",
+                "Comprendre les grandes étapes de la reproduction humaine.",
+                "Introduire l'information génétique."
+            ],
+
+            "chapitres": {
+
+                "Organisation de la cellule": [
+                    "Organisation générale de la cellule",
+                    "Principales structures cellulaires"
+                ],
+
+                "Nutrition et santé": [
+                    "Comportements alimentaires",
+                    "Besoins alimentaires",
+                    "Carences alimentaires",
+                    "Maladies liées aux carences",
+                    "Maladies liées aux excès alimentaires"
+                ],
+
+                "Infection et défense de l'organisme": [
+                    "Agents infectieux",
+                    "Défenses de l'organisme",
+                    "Maladies sexuellement transmissibles",
+                    "Paludisme",
+                    "Choléra",
+                    "Prévention des maladies"
+                ],
+
+                "Reproduction humaine": [
+                    "Appareils reproducteurs",
+                    "Fonctionnement reproducteur",
+                    "Fécondation",
+                    "Développement de l'embryon"
+                ],
+
+                "Information génétique": [
+                    "Notion d'information génétique",
+                    "Transmission de l'information génétique"
+                ]
+            },
+
+            "activites": [
+                "Projet scolaire",
+                "Conférences sur les maladies nutritionnelles",
+                "Conférences sur les IST",
+                "Travaux pratiques"
+            ]
+        },
+
+        "Première C": {
+
+            "objectifs": [
+                "Comprendre l'organisation de la cellule.",
+                "Étudier les transformations de la matière et les flux d'énergie.",
+                "Comprendre le devenir des produits de la digestion.",
+                "Étudier le rôle des glandes et des médiateurs chimiques.",
+                "Comprendre l'organisation et la dynamique du globe terrestre."
+            ],
+
+            "chapitres": {
+
+                "Organisation de la cellule": [
+                    "Cellule procaryote",
+                    "Cellule eucaryote",
+                    "Ultrastructure cellulaire"
+                ],
+
+                "Transformations de la matière et flux d'énergie": [
+                    "Photosynthèse",
+                    "Chimiosynthèse",
+                    "Nutrition animale",
+                    "Digestion",
+                    "Transformations de la matière",
+                    "Flux d'énergie"
+                ],
+
+                "Devenir des produits de la digestion": [
+                    "Utilisation des nutriments",
+                    "Respiration",
+                    "Fermentation",
+                    "Renouvellement de la matière"
+                ],
+
+                "Glandes et médiateurs chimiques": [
+                    "Glandes",
+                    "Hormones",
+                    "Pancréas",
+                    "Neurotransmetteurs",
+                    "Comparaison hormones et neurotransmetteurs"
+                ],
+
+                "Organisation du globe terrestre": [
+                    "Enveloppes de la Terre",
+                    "Structure interne de la Terre",
+                    "Tectonique des plaques",
+                    "Métamorphisme",
+                    "Magmatisme",
+                    "Cycle de la matière"
+                ]
+            },
+
+            "activites": [
+                "Prévention des IST et du VIH/SIDA",
+                "Projet scolaire",
+                "Travaux pratiques",
+                "Excursions pédagogiques"
+            ]
+        },
+
+        "Première D": {
+
+            "objectifs": [
+                "Comprendre l'organisation de la cellule.",
+                "Étudier les transformations de la matière et les flux d'énergie.",
+                "Comprendre le devenir des produits de la digestion.",
+                "Étudier le rôle des glandes et des médiateurs chimiques.",
+                "Comprendre l'organisation et la dynamique du globe terrestre."
+            ],
+
+            "chapitres": {
+
+                "Organisation de la cellule": [
+                    "Cellule procaryote",
+                    "Cellule eucaryote",
+                    "Ultrastructure cellulaire"
+                ],
+
+                "Transformations de la matière et énergie": [
+                    "Photosynthèse",
+                    "Chimiosynthèse",
+                    "Nutrition animale",
+                    "Digestion",
+                    "Respiration",
+                    "Fermentation"
+                ],
+
+                "Produits de la digestion": [
+                    "Devenir des nutriments",
+                    "Utilisation des nutriments",
+                    "Renouvellement de la matière"
+                ],
+
+                "Glandes et médiateurs chimiques": [
+                    "Hormones",
+                    "Pancréas",
+                    "Glandes",
+                    "Neurotransmetteurs"
+                ],
+
+                "Géologie": [
+                    "Enveloppes terrestres",
+                    "Tectonique des plaques",
+                    "Métamorphisme",
+                    "Magmatisme",
+                    "Cycle de la matière"
+                ]
+            },
+
+            "activites": [
+                "Prévention des IST et du VIH/SIDA",
+                "Projet scolaire",
+                "Travaux pratiques",
+                "Excursions pédagogiques"
+            ]
+        },
+
+        "Terminale A1": {
+
+            "objectifs": [
+                "Comprendre l'organisation structurale et fonctionnelle de la cellule.",
+                "Comprendre l'information génétique.",
+                "Étudier la reproduction sexuée et le brassage génétique.",
+                "Comprendre la communication nerveuse."
+            ],
+
+            "chapitres": {
+
+                "Organisation structurale et fonctionnelle de la cellule": [
+                    "Structure de la cellule",
+                    "Fonctionnement cellulaire",
+                    "Relations entre structures et fonctions"
+                ],
+
+                "Information génétique": [
+                    "Support de l'information génétique",
+                    "ADN",
+                    "Expression de l'information génétique",
+                    "Transmission de l'information génétique"
+                ],
+
+                "Reproduction sexuée et brassage génétique": [
+                    "Reproduction sexuée",
+                    "Méiose",
+                    "Fécondation",
+                    "Brassage génétique"
+                ],
+
+                "Communication nerveuse": [
+                    "Message nerveux",
+                    "Transmission de l'information nerveuse",
+                    "Communication entre cellules nerveuses"
+                ]
+            },
+
+            "activites": [
+                "Travaux pratiques",
+                "Études de documents"
+            ]
+        },
+
+
+        "Terminale C": {
+
+            "objectifs": [
+                "Approfondir l'organisation et le fonctionnement de la cellule.",
+                "Comprendre l'information génétique.",
+                "Étudier la reproduction sexuée et le brassage génétique.",
+                "Étudier l'hérédité et la génétique humaine.",
+                "Comprendre la différenciation cellulaire.",
+                "Étudier les communications hormonale et nerveuse.",
+                "Comprendre la réponse immunitaire."
+            ],
+
+            "chapitres": {
+
+                "La cellule": [
+                    "Révision de l'organisation cellulaire",
+                    "Structure et fonctionnement"
+                ],
+
+                "Information génétique": [
+                    "ADN",
+                    "Gènes",
+                    "Expression de l'information génétique",
+                    "Transmission de l'information génétique",
+                    "Mitoses"
+                ],
+
+                "Reproduction sexuée et recombinaison": [
+                    "Méiose",
+                    "Fécondation",
+                    "Brassage génétique",
+                    "Recombinaison génétique"
+                ],
+
+                "Hérédité et génétique humaine": [
+                    "Lois de Mendel",
+                    "Hérédité",
+                    "Génétique humaine",
+                    "Groupes sanguins"
+                ],
+
+                "Différenciation cellulaire": [
+                    "Spécialisation des cellules",
+                    "Activités spécifiques des cellules"
+                ],
+
+                "Communication hormonale et nerveuse": [
+                    "Hormones",
+                    "Régulation hormonale",
+                    "Régulation de la glycémie",
+                    "Message nerveux",
+                    "Communication nerveuse"
+                ],
+
+                "Réponse immunitaire": [
+                    "Immunité",
+                    "Défenses spécifiques",
+                    "Défenses non spécifiques",
+                    "Réponse immunitaire"
+                ]
+            },
+
+            "activites": [
+                "Travaux pratiques",
+                "Études de documents",
+                "Activités expérimentales"
+            ]
+        },
+
+
+        "Terminale D": {
+
+            "objectifs": [
+                "Approfondir l'organisation et le fonctionnement de la cellule.",
+                "Comprendre l'information génétique.",
+                "Étudier la reproduction sexuée et le brassage génétique.",
+                "Comprendre l'hérédité et la génétique humaine.",
+                "Étudier la communication hormonale et nerveuse.",
+                "Comprendre les mécanismes de défense immunitaire.",
+                "Comprendre la régulation de la pression artérielle."
+            ],
+
+            "chapitres": {
+
+                "La cellule": [
+                    "Organisation cellulaire",
+                    "Fonctionnement de la cellule"
+                ],
+
+                "Information génétique": [
+                    "ADN",
+                    "Gènes",
+                    "Expression de l'information génétique",
+                    "Transmission de l'information génétique",
+                    "Mitoses"
+                ],
+
+                "Reproduction sexuée et recombinaison": [
+                    "Méiose",
+                    "Fécondation",
+                    "Brassage génétique",
+                    "Recombinaison génétique"
+                ],
+
+                "Hérédité et génétique humaine": [
+                    "Lois de Mendel",
+                    "Hérédité",
+                    "Génétique humaine",
+                    "Groupes sanguins"
+                ],
+
+                "Communication hormonale et nerveuse": [
+                    "Hormones",
+                    "Glandes endocrines",
+                    "Régulation hormonale",
+                    "Régulation de la glycémie",
+                    "Message nerveux",
+                    "Communication nerveuse"
+                ],
+
+                "Réponse immunitaire": [
+                    "Immunité",
+                    "Défenses spécifiques",
+                    "Défenses non spécifiques",
+                    "Réponse immunitaire"
+                ],
+
+                "Régulation de la pression artérielle": [
+                    "Pression artérielle",
+                    "Mécanismes de régulation",
+                    "Maintien de l'équilibre de la pression artérielle"
+                ]
+            },
+
+            "activites": [
+                "Travaux pratiques",
+                "Études de documents",
+                "Activités expérimentales"
+            ]
+        }
+    }
+   }
+]

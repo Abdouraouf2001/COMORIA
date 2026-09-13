@@ -1,0 +1,12 @@
+[
+    {
+        "nom": "Guilbert",
+        "mot_de_passe": "laimane",
+        "role": "eleve"
+    },
+    {
+        "nom": "ali",
+        "mot_de_passe": "71fd1eba032bb0ba51d4dcd6be1e9799ef98da9e06eb75e98d0dd78331233a25",
+        "role": "professeur"
+    }
+]

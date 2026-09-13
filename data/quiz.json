@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "niveau": "3eme",
+        "matiere": "Mathematiques",
+        "question": "Combien font 7 x 8 ?",
+        "choix": ["54", "56", "64", "48"],
+        "bonne_reponse": "56"
+    },
+    {
+        "id": 2,
+        "niveau": "3eme",
+        "matiere": "Mathematiques",
+        "question": "Quelle est la racine carree de 81 ?",
+        "choix": ["8", "9", "7", "10"],
+        "bonne_reponse": "9"
+    },
+    {
+        "id": 3,
+        "niveau": "3eme",
+        "matiere": "Mathematiques",
+        "question": "Resous : x + 7 = 10. Que vaut x ?",
+        "choix": ["1", "2", "3", "4"],
+        "bonne_reponse": "3"
+    }
+]
+
+
