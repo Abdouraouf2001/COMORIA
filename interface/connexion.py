@@ -1,6 +1,6 @@
 import streamlit as st
 from database.operations import inscrire_utilisateur_db, verifier_connexion_db
-from config.colors import primaryColor, secondaryColor,backgroundColor
+from config.colors import primaryColor, secondaryColor
 
 def afficher_page_connexion():
     st.markdown("""
