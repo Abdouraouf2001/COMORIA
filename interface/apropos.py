@@ -19,7 +19,7 @@ def afficher_page_apropos():
     with st.container(border=True):
         st.markdown("### À propos de moi")
         st.markdown("""
-        Je m'appelle **Abdouraouf Ahamada**, dit **Guilbert**, étudiant en **Master d'IA et enseignement de mathématiques-physique**.
+        Je m'appelle **Abdouraouf Ahamada**, dit **Guilbert**, un citoyen Comorien passionne par l'IA et enseignement de mathématiques-physique**.
 
         C'est cette double formation — entre intelligence artificielle et enseignement des mathématiques et de la physique — qui m'a donné envie de créer Comoria : allier ma passion pour l'IA et mon expérience de l'enseignement pour offrir aux élèves comoriens un accompagnement pédagogique moderne et accessible.
         """)
