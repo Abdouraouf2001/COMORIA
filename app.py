@@ -1,18 +1,20 @@
 import streamlit as st
 from database.models import creer_tables
-from config.couleurs import COULEUR_PRINCIPALE, COULEUR_FOND, COULEUR_TEXTE_SECONDAIRE
+from config.colors import primaryColor, backgroundColor, secondaryTextColor
 from interface.connexion import afficher_page_connexion
 from interface.accueil import afficher_accueil
 from interface.cours import afficher_page_cours
 from interface.programme import afficher_page_programme
 from interface.quiz import afficher_page_quiz
 from interface.assistant_ia import afficher_page_assistant
+
 creer_tables()
 
 st.set_page_config(
     page_title="Comoros AI Tuto",
     page_icon="📚",
-    layout="wide"
+    layout="centered",
+    initial_sidebar_state="collapsed"
 )
 
 if "connecte" not in st.session_state:
@@ -23,36 +25,58 @@ if not st.session_state.connecte:
 else:
     st.markdown(f"""
     <style>
-        .stApp {{
-            background-color: {COULEUR_FOND};
+    .stApp {{
+        background-color: {backgroundColor};
+    }}
+    .login-card {{
+        background-color: white;
+        border-radius: 20px;
+        padding: 40px 30px;
+        max-width: 380px;
+        margin: 60px auto;
+        text-align: center;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }}
+    .login-card h1 {{
+        color: {primaryColor};
+        font-size: 24px;
+        margin-bottom: 8px;
+    }}
+    .login-card p {{
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }}
+    .stTextInput input {{
+        border-radius: 10px !important;
+        padding: 12px !important;
+        background-color: #F0F5F3 !important;
+    }}
+    .stButton button {{
+        background-color: {primaryColor} !important;
+        color: white !important;
+        border-radius: 10px !important;
+        padding: 12px !important;
+        font-weight: bold !important;
+        width: 100%;
+    }}
+    @media (max-width: 600px) {{
+        .login-card {{
+            margin: 30px 16px;
+            padding: 30px 20px;
         }}
-        .en-tete-app {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            background: white;
-            border-radius: 12px;
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid {COULEUR_PRINCIPALE};
-        }}
-        .stButton > button {{
-            background-color: {COULEUR_PRINCIPALE};
-            color: white;
-            border-radius: 6px;
-            border: none;
-        }}
+    }}
     </style>
     """, unsafe_allow_html=True)
 
     st.markdown(f"""
     <div class="en-tete-app">
         <div>
-            <span style="font-size:20px; font-weight:600; color:{COULEUR_PRINCIPALE};">📚 Comoros AI Tuto</span>
+            <span style="font-size:20px; font-weight:600; color:{primaryColor};">📚 Comoros AI Tuto</span>
         </div>
         <div style="text-align:right;">
             <span style="font-size:14px; color:#333;">{st.session_state.nom_utilisateur}</span>
-            <span style="font-size:12px; color:{COULEUR_TEXTE_SECONDAIRE};"> — {st.session_state.role}</span>
+            <span style="font-size:12px; color:{secondaryTextColor};"> — {st.session_state.role}</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
