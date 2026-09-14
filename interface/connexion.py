@@ -1,12 +1,12 @@
 import streamlit as st
 from database.operations import inscrire_utilisateur_db, verifier_connexion_db
-from config.colors import primaryColor, backgroundColor, secondaryTextColor
+from config.colors import primaryColor, textColor , secondaryTextColor
 
 def afficher_page_connexion():
     st.markdown("""
     <style>
         .stApp {
-            background-color: #E8F0EA;
+            background-color: #F4F8FB;
         }
         div[data-testid="stVerticalBlockBorderWrapper"] {
             background-color: white;
@@ -23,7 +23,7 @@ def afficher_page_connexion():
             st.markdown(f"""
             <div style="text-align:center; padding: 1rem 0 0.5rem 0;">
                 <h2 style="color:{primaryColor}; margin:0;">Salama ! Bonjour !</h2>
-                <p style="color:{secondaryTextColor}; font-size:14px; margin-top:6px;">
+                <p style="color:{textColor}; font-size:14px; margin-top:6px;">
                     Connecte-toi pour retrouver tes cours et tes progres.
                 </p>
             </div>

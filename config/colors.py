@@ -1,3 +1,5 @@
-primaryColor="#00843D"
-backgroundColor ="#DCE9E4"
-secondaryTextColor = "#666666"
+primaryColor = "#F4C430"
+secondaryColor = "#F5F7FA"
+secondaryTextColor = "#FFFFFF"
+textColor = "#17202A"
+font ="sans serif"
