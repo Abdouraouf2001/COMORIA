@@ -1,6 +1,6 @@
 import streamlit as st
 from database.operations import inscrire_utilisateur_db, verifier_connexion_db
-from config.couleurs import COULEUR_PRINCIPALE, COULEUR_TEXTE_SECONDAIRE
+from config.colors import primaryColor, backgroundColor, secondaryTextColor
 
 def afficher_page_connexion():
     st.markdown("""
@@ -22,8 +22,8 @@ def afficher_page_connexion():
         with st.container(border=True):
             st.markdown(f"""
             <div style="text-align:center; padding: 1rem 0 0.5rem 0;">
-                <h2 style="color:{COULEUR_PRINCIPALE}; margin:0;">Salama ! Bonjour !</h2>
-                <p style="color:{COULEUR_TEXTE_SECONDAIRE}; font-size:14px; margin-top:6px;">
+                <h2 style="color:{primaryColor}; margin:0;">Salama ! Bonjour !</h2>
+                <p style="color:{secondaryTextColor}; font-size:14px; margin-top:6px;">
                     Connecte-toi pour retrouver tes cours et tes progres.
                 </p>
             </div>
@@ -63,42 +63,3 @@ def afficher_page_connexion():
                             st.success(message)
                         else:
                             st.error(message)
-
-
-
-
-
-# import streamlit as st
-# from database.operations import inscrire_utilisateur_db, verifier_connexion_db
-
-# def afficher_page_connexion():
-#     st.title("Connexion")
-#     onglet_connexion, onglet_inscription = st.tabs(["Se connecter", "S'inscrire"])
-#     with onglet_connexion:
-#         nom = st.text_input("Nom d'utilisateur", key="nom_connexion")
-#         mot_de_passe = st.text_input("Mot de passe", type="password", key="mdp_connexion")
-
-#         if st.button("Se connecter"):
-#             succes, role = verifier_connexion_db(nom, mot_de_passe)
-#             if succes:
-#                 st.session_state.connecte = True
-#                 st.session_state.nom_utilisateur = nom
-#                 st.session_state.role = role
-#                 st.success(f"Bienvenue, {nom} !")
-#                 st.rerun()
-#             else:
-#                 st.error("Nom d'utilisateur ou mot de passe incorrect.")
-
-#     with onglet_inscription:
-#         nouveau_nom = st.text_input("Choisis un nom d'utilisateur", key="nom_inscription")
-#         nouveau_mdp = st.text_input("Choisis un mot de passe", type="password", key="mdp_inscription")
-#         role = st.selectbox("Tu es :", ["eleve", "professeur"])
-
-#         if st.button("S'inscrire"):
-#             succes, message = inscrire_utilisateur_db(nouveau_nom, nouveau_mdp, role)
-#             if succes:
-#                 st.success(message)
-#             else:
-#                 st.error(message)
-
-#     # ... tout le code du menu et de la navigation qu'on avait avant
