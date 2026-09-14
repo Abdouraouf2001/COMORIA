@@ -23,7 +23,7 @@ def afficher_page_connexion():
             st.markdown(f"""
             <div style="text-align:center; padding: 1rem 0 0.5rem 0;">
                 <h2 style="color:{ primaryColor }; margin:0;">Salama ! Bonjour !</h2>
-                <p style="color:{COULEUR_TEXTE_SECONDAIRE}; font-size:14px; margin-top:6px;">
+                <p style="color:{secondaryTextColor}; font-size:14px; margin-top:6px;">
                     Connecte-toi pour retrouver tes cours et tes progres.
                 </p>
             </div>
