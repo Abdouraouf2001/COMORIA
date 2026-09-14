@@ -36,3 +36,31 @@ def verifier_connexion_db(nom, mot_de_passe):
     if utilisateur:
         return True, utilisateur["role"]
     return False, None
+
+from datetime import datetime
+
+def creer_table_messages():
+    conn = obtenir_connexion()
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS messages_contact (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nom TEXT NOT NULL,
+            email TEXT NOT NULL,
+            message TEXT NOT NULL,
+            date_envoi TEXT NOT NULL
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+def enregistrer_message_contact(nom, email, message):
+    conn = obtenir_connexion()
+    cursor = conn.cursor()
+    date_envoi = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cursor.execute("""
+        INSERT INTO messages_contact (nom, email, message, date_envoi)
+        VALUES (?, ?, ?, ?)
+    """, (nom, email, message, date_envoi))
+    conn.commit()
+    conn.close()

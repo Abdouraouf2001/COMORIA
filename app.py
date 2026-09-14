@@ -1,3 +1,5 @@
+from interface.apropos import afficher_page_apropos
+from database.operations import creer_table_messages
 import streamlit as st
 from database.models import creer_tables
 from config.colors import primaryColor, backgroundColor, secondaryTextColor
@@ -9,6 +11,8 @@ from interface.quiz import afficher_page_quiz
 from interface.assistant_ia import afficher_page_assistant
 
 creer_tables()
+creer_table_messages()
+
 
 st.set_page_config(
     page_title="Comoros AI Tuto",
@@ -93,7 +97,7 @@ else:
         page = st.session_state.page_forcee
         del st.session_state.page_forcee
     else:
-        page = st.sidebar.radio("Navigation", ["Accueil", "Cours", "Programme officiel", "Quiz", "Assistant IA"])
+        page = st.sidebar.radio("Navigation", ["Accueil", "Cours", "Programme officiel", "Quiz", "Assistant IA", "A propos"])
 
     col_gauche, col_centre, col_droite = st.columns([1, 6, 1])
     with col_centre:
@@ -107,4 +111,6 @@ else:
             afficher_page_quiz()
         elif page == "Assistant IA":
             afficher_page_assistant()
+        elif page=="A propos":
+            afficher_page_apropos()
  
