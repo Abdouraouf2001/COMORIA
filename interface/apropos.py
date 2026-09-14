@@ -21,5 +21,5 @@ def afficher_page_apropos():
     On veut qu'aucun élève ne reste bloqué sur une question faute d'avoir quelqu'un pour lui expliquer, où qu'il soit et quelle que soit l'heure.
     """)
 
-    st.markdown("### En chiffres")
+    st.markdown()
     col1, col2, col3, col4 = st.columns(4)
