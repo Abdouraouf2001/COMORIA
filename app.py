@@ -107,3 +107,4 @@ else:
             afficher_page_quiz()
         elif page == "Assistant IA":
             afficher_page_assistant()
+ 
