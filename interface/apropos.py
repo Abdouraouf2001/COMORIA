@@ -8,9 +8,19 @@ def afficher_page_apropos():
     st.markdown("""
     ### À propos de moi
 
-    Je m'appelle **Abdouraouf Ahamada saroumaya**, dit **Guilbert**, Etudiant en IA a l'Universite midocean et passionne par l'enseignement.
+    À propos du fondateur
 
-    C'est cette double formation — entre intelligence artificielle et enseignement — qui m'a donné envie de créer ComorIA : allier ma passion pour l'IA et mon expérience de l'enseignement pour offrir aux élèves comoriens un accompagnement pédagogique moderne et accessible.
+Je m’appelle Abdouraouf Ahamada Saroumaya, dit Guilbert. Je suis étudiant en Master en Intelligence Artificielle à Midocean University, passionné par les nouvelles technologies, l’intelligence artificielle et l’enseignement.
+
+Mon parcours m’a permis de développer un intérêt particulier pour le domaine de l’IA, tout en conservant une forte passion pour la transmission des connaissances et l’accompagnement des élèves. Mon expérience dans l’enseignement m’a notamment permis de comprendre certaines difficultés rencontrées par les apprenants et l’importance d’un accompagnement pédagogique adapté.
+
+C’est cette double passion — l’intelligence artificielle et l’enseignement — qui m’a donné l’idée de créer ComorIA, une plateforme éducative pensée pour les élèves comoriens.
+
+À travers ComorIA, mon objectif est de mettre les possibilités offertes par l’intelligence artificielle au service de l’éducation aux Comores, en proposant un accompagnement moderne, accessible, interactif et adapté au contexte éducatif comorien.
+
+ComorIA est donc né d’une vision simple : utiliser l’IA pour rendre l’apprentissage plus accessible et contribuer à construire une éducation numérique adaptée aux besoins des élèves comoriens.
+  
+    
     """)
 
     st.markdown("""
