@@ -6,9 +6,9 @@ def afficher_page_apropos():
     st.title("À propos de nous")
 
     st.markdown("""
-    ### À propos de moi
+    ### À propos du fondateur
 
-    À propos du fondateur
+    
 
 Je m’appelle Abdouraouf Ahamada Saroumaya, dit Guilbert. Je suis étudiant en Master en Intelligence Artificielle à Midocean University, passionné par les nouvelles technologies, l’intelligence artificielle et l’enseignement.
 
