@@ -10,7 +10,7 @@ def afficher_page_apropos():
 
     Je m'appelle **Abdouraouf Ahamada saroumaya**, dit **Guilbert**, Etudiant en IA et passionne par l'enseignement.
 
-    C'est cette double formation — entre intelligence artificielle et enseignement — qui m'a donné envie de créer Comoria : allier ma passion pour l'IA et mon expérience de l'enseignement pour offrir aux élèves comoriens un accompagnement pédagogique moderne et accessible.
+    C'est cette double formation — entre intelligence artificielle et enseignement — qui m'a donné envie de créer ComorIA : allier ma passion pour l'IA et mon expérience de l'enseignement pour offrir aux élèves comoriens un accompagnement pédagogique moderne et accessible.
     """)
 
     st.markdown("""
