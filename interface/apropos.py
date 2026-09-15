@@ -8,7 +8,7 @@ def afficher_page_apropos():
     st.markdown("""
     ### À propos de moi
 
-    Je m'appelle **Abdouraouf Ahamada saroumaya**, dit **Guilbert**, Etudiant en IA et passionne par l'enseignement.
+    Je m'appelle **Abdouraouf Ahamada saroumaya**, dit **Guilbert**, Etudiant en IA a l'Universite midocean et passionne par l'enseignement.
 
     C'est cette double formation — entre intelligence artificielle et enseignement — qui m'a donné envie de créer ComorIA : allier ma passion pour l'IA et mon expérience de l'enseignement pour offrir aux élèves comoriens un accompagnement pédagogique moderne et accessible.
     """)
