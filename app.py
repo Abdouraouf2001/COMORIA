@@ -1,3 +1,4 @@
+
 from interface.recherche import afficher_page_recherche
 from interface.apropos import afficher_page_apropos
 from database.operations import creer_table_messages
@@ -15,22 +16,11 @@ from interface.assistant_ia import afficher_page_assistant
 creer_tables()
 creer_table_messages()
 
-
 st.set_page_config(
     page_title="ComorIA",
     page_icon="🇰🇲",
     layout="wide",
     initial_sidebar_state="collapsed"
-)
-
-
-st.markdown(
-    """
-<link rel="manifest" href="./static/manifest.json">
-<meta name="theme-color" content="#0D6EFD">
-<link rel="apple-touch-icon" href="./static/icon-192.png">
-""",
-    unsafe_allow_html=True
 )
 
 
@@ -153,7 +143,7 @@ text-align: left;
     )
 
 
-    st.sidebar.title("🇰🇲 ComorIA")
+    st.sidebar.title("ComorIA")
 
     st.sidebar.caption(
         "Plateforme éducative intelligente"

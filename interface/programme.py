@@ -99,6 +99,16 @@ def afficher_page_programme():
             "sera ajouté prochainement."
         )
 
+    st.markdown("""
+        <div class="footer-apropos">
+              <strong>ComorIA</strong> — L'IA au service de l'éducation aux Comores
+            <br>
+            Une initiative portée par Abdouraouf Ahamada Saroumaya (Guilbert)
+                <br>
+                   2026 ComorIA . Tous droits reserves
+        </div
+        """, unsafe_allow_html=True)
+
 
 
 

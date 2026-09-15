@@ -27,3 +27,15 @@ def afficher_page_assistant():
         )
         with st.chat_message("assistant"):
             st.write(reponse)
+
+
+
+    st.markdown("""
+        <div class="footer-apropos">
+              <strong>ComorIA</strong> — L'IA au service de l'éducation aux Comores
+            <br>
+            Une initiative portée par Abdouraouf Ahamada Saroumaya (Guilbert)
+                <br>
+                   2026 ComorIA . Tous droits reserves
+        </div
+        """, unsafe_allow_html=True)
