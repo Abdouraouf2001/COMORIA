@@ -1,4 +1,4 @@
-
+from interface.recherche import afficher_page_recherche
 from interface.apropos import afficher_page_apropos
 from database.operations import creer_table_messages
 import streamlit as st
@@ -167,6 +167,7 @@ text-align: left;
         [
             "Accueil",
             "Cours",
+            "Recherche",
             "Programme officiel",
             "Quiz",
             "Assistant IA",
@@ -203,7 +204,9 @@ text-align: left;
     elif page == "Cours":
 
         afficher_page_cours()
-
+    
+    elif page=="Recherche":
+        afficher_page_recherche()
 
     elif page == "Programme officiel":
 

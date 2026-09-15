@@ -1,4 +1,4 @@
-primaryColor = "#F4C430"
+primaryColor = "#71F430"
 secondaryColor = "#F5F7FA"
 secondaryTextColor = "#FFFFFF"
 textColor = "#17202A"

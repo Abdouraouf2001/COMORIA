@@ -1,45 +1,193 @@
-
 import streamlit as st
-from fonction.cours import charger_cours, obtenir_niveaux, obtenir_matieres, obtenir_cours
-from config.colors import primaryColor, secondaryColor, secondaryTextColor
+
+from fonction.cours import (
+    charger_cours,
+    obtenir_niveaux,
+    obtenir_matieres,
+    obtenir_cours
+)
+
+from config.colors import (
+    primaryColor,
+    secondaryColor,
+    secondaryTextColor
+)
+
+
+def afficher_cours_selectionne(cours_selectionne):
+
+    st.markdown(
+        f"""
+        <style>
+        .cours-carte {{
+            background-color: white;
+            border-radius: 16px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 14px;
+            border: 0.5px solid #E0E6EC;
+        }}
+
+        .cours-titre {{
+            color: {primaryColor};
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 4px;
+        }}
+
+        .cours-info {{
+            background-color: #EAF3DE;
+            border-radius: 12px;
+            padding: 12px 14px;
+            color: {secondaryColor};
+            font-size: 13px;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    niveau = cours_selectionne.get(
+        "niveau",
+        "Niveau non précisé"
+    )
+
+    matiere = cours_selectionne.get(
+        "matiere",
+        "Matière non précisée"
+    )
+
+    chapitre = cours_selectionne.get(
+        "chapitre",
+        "Chapitre sans titre"
+    )
+
+    contenu = cours_selectionne.get(
+        "contenu",
+        "Aucun contenu disponible."
+    )
+
+    st.markdown(
+        f"""
+        <div class="cours-carte">
+            <p class="cours-titre">
+                📖 {chapitre}
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.info(
+        f"🎓 Niveau : {niveau}  •  📚 Matière : {matiere}"
+    )
+
+    st.markdown("### 📖 Contenu du cours")
+
+    if isinstance(contenu, list):
+        for element in contenu:
+            st.write(element)
+
+    elif isinstance(contenu, dict):
+        for cle, valeur in contenu.items():
+            st.markdown(f"**{cle}**")
+            st.write(valeur)
+
+    else:
+        st.write(contenu)
+
+    exercices = cours_selectionne.get(
+        "exercices",
+        []
+    )
+
+    if exercices:
+
+        st.markdown("### 📝 Exercices")
+
+        for index, exercice in enumerate(
+            exercices,
+            start=1
+        ):
+
+            if isinstance(exercice, dict):
+
+                question = exercice.get(
+                    "question",
+                    "Question non disponible"
+                )
+
+                st.write(
+                    f"**{index}.** {question}"
+                )
+
+            else:
+
+                st.write(
+                    f"**{index}.** {exercice}"
+                )
+
+    st.divider()
+
+    if st.button(
+        "⬅️ Retour à la liste des cours",
+        use_container_width=True
+    ):
+
+        del st.session_state["cours_selectionne"]
+
+        st.rerun()
 
 
 def afficher_page_cours():
 
+    if "cours_selectionne" in st.session_state:
+
+        afficher_cours_selectionne(
+            st.session_state["cours_selectionne"]
+        )
+
+        return
+
     st.markdown(
         f"""
-<style>
-.cours-carte {{
-background-color: white;
-border-radius: 16px;
-padding: 1rem 1.25rem;
-margin-bottom: 14px;
-border: 0.5px solid #E0E6EC;
-}}
-.cours-titre {{
-color: {primaryColor};
-font-size: 22px;
-font-weight: 700;
-margin: 0 0 4px;
-}}
-.cours-info {{
-background-color: #EAF3DE;
-border-radius: 12px;
-padding: 12px 14px;
-color: {secondaryColor};
-font-size: 13px;
-}}
-</style>
-""",
+        <style>
+
+        .cours-carte {{
+            background-color: white;
+            border-radius: 16px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 14px;
+            border: 0.5px solid #E0E6EC;
+        }}
+
+        .cours-titre {{
+            color: {primaryColor};
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 4px;
+        }}
+
+        .cours-info {{
+            background-color: #EAF3DE;
+            border-radius: 12px;
+            padding: 12px 14px;
+            color: {secondaryColor};
+            font-size: 13px;
+        }}
+
+        </style>
+        """,
         unsafe_allow_html=True
     )
 
     st.markdown(
         """
-<div class="cours-carte">
-<p class="cours-titre">📚 Choisis ton cours</p>
-</div>
-""",
+        <div class="cours-carte">
+            <p class="cours-titre">
+                📚 Choisis ton cours
+            </p>
+        </div>
+        """,
         unsafe_allow_html=True
     )
 
@@ -56,118 +204,106 @@ font-size: 13px;
         return
 
     with st.container(border=True):
-        niveau = st.selectbox("🎓 Ton niveau :", niveaux)
+        niveau = st.selectbox(
+            "🎓 Ton niveau :",
+            niveaux
+        )
 
-    matieres = obtenir_matieres(cours, niveau)
+    matieres = obtenir_matieres(
+        cours,
+        niveau
+    )
 
     if not matieres:
-        st.warning("Aucune matière disponible pour ce niveau.")
-        return
-
-    with st.container(border=True):
-        matiere = st.selectbox("📖 Matière :", matieres)
-
-    resultats = obtenir_cours(cours, niveau, matiere)
-
-    if not resultats:
-        st.markdown(
-            """
-<div class="cours-info">
-Aucun cours trouvé pour cette sélection.
-</div>
-""",
-            unsafe_allow_html=True
+        st.warning(
+            "Aucune matière disponible pour ce niveau."
         )
         return
 
-    for c in resultats:
-        chapitre = c.get("chapitre", "Chapitre sans titre")
-        with st.expander(f"📘 {chapitre}"):
-            st.write(c.get("contenu", ""))
+    with st.container(border=True):
+        matiere = st.selectbox(
+            "📖 Matière :",
+            matieres
+        )
 
-            if "exercices" in c and c["exercices"]:
-                st.markdown("### 📝 Exercices")
-                for ex in c["exercices"]:
-                    st.write(f"- {ex.get('question', 'Question non disponible')}")
+    resultats = obtenir_cours(
+        cours,
+        niveau,
+        matiere
+    )
 
+    if not resultats:
 
+        st.markdown(
+            """
+            <div class="cours-info">
+                Aucun cours trouvé pour cette sélection.
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
-# import streamlit as st
-# from fonction.cours import  charger_cours, obtenir_niveaux, obtenir_matieres, obtenir_cours 
+        return
 
-# def afficher_page_cours():
+    for index, c in enumerate(resultats):
 
-#     st.title("📚 Choisis ton cours")
-#     cours = charger_cours()
+        chapitre = c.get(
+            "chapitre",
+            "Chapitre sans titre"
+        )
 
-#     if not cours:
-#         st.warning("Aucun cours disponible.")
-#         return
-#     niveaux = obtenir_niveaux(cours)
-#     if not niveaux:
-#         st.warning("Aucun niveau disponible.")
-#         return
-#     niveau = st.selectbox(
-#         "🎓 Ton niveau :",
-#         niveaux
-#     )
-#     matieres = obtenir_matieres(cours, niveau)
-#     if not matieres:
-#         st.warning("Aucune matière disponible pour ce niveau.")
-#         return
-#     matiere = st.selectbox(
-#         "📖 Matière :",
-#         matieres
-#     )
+        with st.expander(
+            f"📘 {chapitre}"
+        ):
 
-#     resultats = obtenir_cours(
-#         cours,
-#         niveau,
-#         matiere
-#     )
+            contenu = c.get(
+                "contenu",
+                ""
+            )
 
-#     if not resultats:
-#         st.info("Aucun cours trouvé pour cette sélection.")
-#         return
+            if isinstance(contenu, list):
 
-#     # Afficher les cours
-#     for c in resultats:
+                for element in contenu:
+                    st.write(element)
 
-#         chapitre = c.get("chapitre", "Chapitre sans titre")
+            elif isinstance(contenu, dict):
 
-#         with st.expander(f"📘 {chapitre}"):
+                for cle, valeur in contenu.items():
 
-#             st.write(c.get("contenu", ""))
+                    st.markdown(
+                        f"**{cle}**"
+                    )
 
-#             if "exercices" in c and c["exercices"]:
+                    st.write(valeur)
 
-#                 st.markdown("### 📝 Exercices")
+            else:
 
-#                 for ex in c["exercices"]:
-#                     st.write(
-#                         f"- {ex.get('question', 'Question non disponible')}"
-#                     )
+                st.write(contenu)
 
+            exercices = c.get(
+                "exercices",
+                []
+            )
 
+            if exercices:
 
+                st.markdown(
+                    "### 📝 Exercices"
+                )
 
-# # import streamlit as st
-# # from fonction.cours import charger_cours, obtenir_niveaux, obtenir_matieres, obtenir_cours
+                for exercice in exercices:
 
-# # def afficher_page_cours():
-# #     st.title("Choisis ton cours")
+                    if isinstance(exercice, dict):
 
-# #     cours = charger_cours()
-# #     niveau = st.selectbox("ton niveau:", obtenir_niveaux(cours))
-# #     matiers= st.selectbox("Matiere:",obtenir_matieres(cours , niveau))
+                        st.write(
+                            f"- {exercice.get(
+                                'question',
+                                'Question non disponible'
+                            )}"
+                        )
 
-# #     resultats = obtenir_cours(cours,niveau,matiers)
-# #     for c in resultats:
-# #         with st.expander(f"{c['chapitre']}"):
-# #             st.write(c["contenu"])
+                    else:
 
-# #             if "exercices" in c :
-# #                st.markdown("***Exercices : ***")
-# #                for ex in c["exercices"]:
-# #                    st.write(f"-{ex['question']}")
-
+                        st.write(
+                            f"- {exercice}"
+                        )
