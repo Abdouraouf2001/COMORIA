@@ -11,6 +11,7 @@ from interface.cours import afficher_page_cours
 from interface.programme import afficher_page_programme
 from interface.quiz import afficher_page_quiz
 from interface.assistant_ia import afficher_page_assistant
+from interface.communaute import afficher_page_communaute
 
 
 creer_tables()
@@ -183,6 +184,7 @@ else:
         "Programme officiel",
         "Quiz",
         "Assistant IA",
+        "communaute",
         "A propos",
     ]
 
@@ -233,6 +235,8 @@ else:
     elif page == "Assistant IA":
 
         afficher_page_assistant()
+    elif page =="communaute":
+        afficher_page_communaute()
 
     elif page == "Administration":
 
