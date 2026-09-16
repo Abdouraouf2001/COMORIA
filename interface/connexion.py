@@ -64,18 +64,6 @@ def afficher_page_connexion():
                         else:
                             st.error(message)
 
-
-
-
-
-    st.markdown("""
-       <div class="footer-apropos">
-             <strong>ComorIA</strong> — L'IA au service de l'éducation aux Comores
-           <br>
-           Une initiative portée par Abdouraouf Ahamada Saroumaya (Guilbert)
-               <br>
-                  2026 ComoIA . Tous droits reserves
-       </div
-       """, unsafe_allow_html=True)                         
+                        
 
 
